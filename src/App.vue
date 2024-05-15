@@ -1,5 +1,9 @@
 <template>
 <div class="wrapper">
+  <nav class="navbar" :class="{ 'slide-down': showNavbar }">
+  <a class="navbar-item" href="#" @click.prevent="showNavbar = !showNavbar">Todo</a>
+  <a class="navbar-item" href="#" @click.prevent="showNavbar = !showNavbar">Post</a>
+</nav>
   <div class="container" :class="{ 'fadeIn': fadeIn, 'fadeOut': fadeOut }">
     <h1>Plan Your Activity</h1>
     <table>
@@ -34,7 +38,7 @@
       <input v-model="newActivity" type="text" placeholder="Create New Task" />
       <button type="submit">Add</button>
     </form>
-    <label>
+    <label class="checkbox-label">
       <input type="checkbox" v-model="showOnlyIncomplete" />
       Show Unfinished Tasks
     </label>
@@ -58,14 +62,12 @@ export default {
     };
   },
   created() {
-    // Load activities from localStorage when the component is created
     const savedActivities = localStorage.getItem('activities');
     if (savedActivities) {
       this.activities = JSON.parse(savedActivities);
     }
   },
   watch: {
-    // Save activities to localStorage whenever it changes
     activities: {
       handler: function(activities) {
         localStorage.setItem('activities', JSON.stringify(activities));
@@ -92,7 +94,7 @@ export default {
         });
         this.newActivity = '';
         
-        // Tambahkan animasi fadeIn
+       
         this.fadeIn = true;
         setTimeout(() => {
           this.fadeIn = false;
@@ -104,7 +106,7 @@ export default {
       if (index !== -1) {
         this.activities.splice(index, 1);
         
-        // Tambahkan animasi fadeOut
+       
         this.fadeOut = true;
         setTimeout(() => {
           this.fadeOut = false;
@@ -114,7 +116,7 @@ export default {
     toggleCompletion(activity) {
       activity.completed = !activity.completed;
       
-      // Tambahkan animasi saat toggle
+      
       const span = document.querySelector('.container');
       span.classList.add('animate');
       setTimeout(() => {
@@ -122,7 +124,7 @@ export default {
       }, 1000);
     },
     footerHover() {
-      // Tambahkan animasi pada footer
+      
       const footer = document.querySelector('.footer');
       footer.classList.add('footerHover');
       setTimeout(() => {

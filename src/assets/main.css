@@ -25,6 +25,49 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0C0C0C;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: transform 0.3s;
+}
+
+.navbar.slide-down {
+  transform: translateY(-100%);
+}
+
+.navbar-item {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.navbar-item:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-item:active {
+  transform: translateY(-1px);
+}
+
+.navbar-item:first-child {
+  margin-left: 0;
+}
+
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -105,16 +148,22 @@ input[type="text"]:focus {
 
 label {
   font-size: 14px;
-  display: block;
+  display: flex;
   margin-top: 10px;
   color: rgb(255, 255, 255);
+  align-items: center;
 }
 
 .checkbox-label {
   font-size: 14px;
-  display: inline-block;
-  margin-right: 5px;
+  display: flex;
+  align-items: center; 
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  
 }
+
 
 .checkbox {
   display: inline-block;
@@ -123,14 +172,12 @@ label {
 }
 
 .checkbox:checked + .checkbox-label::before {
-  content: "\2713";
   display: inline-block;
   margin-right: 5px;
   font-size: 14px;
 }
 
 .checkbox-label::before {
-  content: "\2610";
   display: inline-block;
   margin-right: 5px;
   font-size: 14px;
@@ -196,3 +243,5 @@ background-color: #0C0C0C;
     opacity: 0;
   }
 }
+
+
