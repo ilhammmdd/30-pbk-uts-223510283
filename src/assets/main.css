@@ -68,6 +68,8 @@ body{
   margin-right: 0;
 }
 
+
+
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -187,6 +189,25 @@ label {
   color: #0056b3;
 }
 
+select{
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+option{
+  text-align: center;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        padding: 10px;
+}
+
 .footer {
   text-align: center;
   margin-top: 20px;
@@ -197,6 +218,11 @@ label {
 
 .container {
   padding-bottom: 60px;
+}
+
+.tulis{
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 .footer {
