@@ -63,7 +63,7 @@ h1 {
   margin: 0 auto;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2c2c2c;
+  background-color: #CCC8AA;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -72,7 +72,7 @@ h1 {
 
 .user-selection {
   margin-bottom: 10px;
-  background-color: #393939;
+  background-color: #7D7C7C;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -103,7 +103,7 @@ select:hover {
 
 .post-section {
   text-align: left;
-  background-color: #393939;
+  background-color: #7D7C7C;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -138,7 +138,7 @@ ol {
 
 .post-item b {
   font-size: 20px;
-  color: #f4ce14;
+  color: #F1EFEF;
   margin-bottom: 5px;
 }
 </style>

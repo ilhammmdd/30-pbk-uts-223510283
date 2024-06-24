@@ -1,6 +1,5 @@
 <template>
     <div class="container" :class="{ 'fadeIn': fadeIn, 'fadeOut': fadeOut }">
-      <h1>Plan Your Activity</h1>
       <table>
         <thead>
           <tr>
