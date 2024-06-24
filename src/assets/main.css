@@ -5,7 +5,7 @@ html, body {
 }
 
 body{
-  background-color: #750E21;
+  background-color: #E4C59E;
 }
 
 .wrapper {
@@ -20,60 +20,17 @@ body{
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #0C0C0C;
+  background-color: #312f2f;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 60px;
+  margin-top: 40px;
 }
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #0C0C0C;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-  transition: transform 0.3s;
-}
-
-.navbar.slide-down {
-  transform: translateY(-100%);
-}
-
-.navbar-item {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  transition: transform 0.3s;
-}
-
-.navbar-item:hover {
-  transform: translateY(-2px);
-}
-
-.navbar-item:active {
-  transform: translateY(-1px);
-}
-
-.navbar-item:first-child {
-  margin-left: 0;
-}
-
-.navbar-item:last-child {
-  margin-right: 0;
-}
-
-
 
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: rgb(229, 9, 20);
+  color: #E4C59E;
   text-align: center;
 }
 
@@ -91,23 +48,9 @@ th, td {
 }
 
 th {
-  background-color: rgb(229, 9, 20);
+  background-color: #AF8260;
   color: rgb(255, 255, 255);
   font-weight: normal;
-}
-
-
-
-.activity-number {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  background-color: #3c4249;
-  color: #fff;
-  margin-right: 10px;
-  border-radius: 50%;
 }
 
 .completed {
@@ -128,7 +71,7 @@ button {
 }
 
 button:hover {
-  background-color: #004080;
+  background-color: #803D3B;
 }
 
 form {
@@ -166,7 +109,6 @@ label {
   
 }
 
-
 .checkbox {
   display: inline-block;
   vertical-align: middle;
@@ -185,9 +127,6 @@ label {
   font-size: 14px;
 }
 
-.checkbox:checked + .checkbox-label {
-  color: #0056b3;
-}
 
 select{
   border-radius: 5px;
@@ -208,36 +147,9 @@ option{
         padding: 10px;
 }
 
-.footer {
-  text-align: center;
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 1px solid #0C0C0C;
-  color: rgb(229, 9, 20);
-}
-
-.container {
-  padding-bottom: 60px;
-}
-
 .tulis{
   color: #fff;
   font-family: Arial, sans-serif;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-background-color: #0C0C0C;
-  padding: 20px;
-  text-align: center;
-}
-
-.footerHover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
 }
 
 @keyframes animate {
